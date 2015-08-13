@@ -1,0 +1,26 @@
+{
+  "name": "medium-editor-multi-placeholders-plugin",
+  "version": "1.0.0",
+  "homepage": "https://github.com/smiled0g/medium-editor-multi-placeholders-plugin",
+  "authors": [
+    "Kasi Chonpimai <mnm630848@gmail.com>"
+  ],
+  "description": "A plugin for adding multiple placeholders in MediumEditor",
+  "main": "dist/medium-editor-multi-placeholders-plugin.js",
+  "keywords": [
+    "MediumEditor",
+    "Multiple",
+    "Placeholders"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "medium-editor": "^4.0.0"
+  }
+}
