@@ -1,4 +1,4 @@
-# MediumEditorMultiPlaceholders
+# MediumEditorMultiPlaceholders Plugin
  A plugin that allows you to setup multiple placeholders with [MediumEditor](https://github.com/yabwe/medium-editor)
  
  [![NPM](https://nodei.co/npm/medium-editor-multi-placeholders-plugin.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/medium-editor-multi-placeholders-plugin/)
