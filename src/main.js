@@ -42,7 +42,6 @@ var MediumEditorMultiPlaceholders = MediumEditor.Extension.extend({
   },
 
   updatePlaceholder: function (el) {
-      // if one of these element ('img, blockquote, ul, ol') are found inside the given element, we won't display the placeholder
       if (el.textContent === '') {
           return this.showPlaceholder(el);
       }
