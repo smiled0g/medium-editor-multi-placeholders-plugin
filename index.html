@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medium Editor Multi-placeholders Plugin Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.6.2/css/medium-editor.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.6.2/css/themes/default.min.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.6.2/js/medium-editor.min.js"></script>
+  <script src="dist/medium-editor-multi-placeholders-plugin.min.js"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .header, .subheader {
+      text-align: center;
+      color: #555;
+    }
+    .subheader {
+      margin: -10px 0 30px;
+    }
+    a, a:hover, a:active {
+      text-decoration: none;
+      color: #777;
+    }
+    #editor {
+      width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+
+</head>
+<body>
+  <h1 class="header">MediumEditorMultiPlaceholders Plugin Demo</h1>
+  <h3 class="subheader">A plugin that allows you to setup multiple placeholders with <a href="https://github.com/yabwe/medium-editor">MediumEditor</a></h3>
+  <a href="https://github.com/smiled0g/medium-editor-multi-placeholders-plugin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+  <div id="editor"></div>
+  <script>
+    var editor = new MediumEditor('#editor', {
+      placeholder: false,
+      extensions: {
+        'multi_placeholder': new MediumEditorMultiPlaceholders({
+          placeholders: [
+              {
+                tag: 'h1',
+                text: 'I\'m a placeholder for H1 tag.'
+              },
+              {
+                tag: 'h2',
+                text: 'I\'m a placeholder for H2 tag.'
+              },
+              {
+                tag: 'h3',
+                text: 'I\'m a placeholder for H3 tag.'
+              },
+              {
+                tag: 'p',
+                text: 'I\'m a placeholder for P tag.'
+              }
+          ]
+        })
+      }
+    });
+  </script>
+</body>
+</html>
