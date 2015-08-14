@@ -1,9 +1,9 @@
 # MediumEditorMultiPlaceholders Plugin
  A plugin that allows you to setup multiple placeholders with [MediumEditor](https://github.com/yabwe/medium-editor)
- 
+
  [![NPM](https://nodei.co/npm/medium-editor-multi-placeholders-plugin.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/medium-editor-multi-placeholders-plugin/)
- 
- [![Travis Build Status](https://travis-ci.org/smiled0g/medium-editor-multi-placeholders-plugin.svg?branch=master)](https://travis-ci.org/smiled0g/medium-editor-multi-placeholders-plugin) 
+
+ [![Travis Build Status](https://travis-ci.org/smiled0g/medium-editor-multi-placeholders-plugin.svg?branch=master)](https://travis-ci.org/smiled0g/medium-editor-multi-placeholders-plugin)
  [![Dependency Status](https://david-dm.org/smiled0g/medium-editor-multi-placeholders-plugin.svg)](https://david-dm.org/smiled0g/medium-editor-multi-placeholders-plugin)
 [![devDependency Status](https://david-dm.org/smiled0g/medium-editor-multi-placeholders-plugin/dev-status.svg)](https://david-dm.org/smiled0g/medium-editor-multi-placeholders-plugin#info=devDependencies)
 
@@ -17,11 +17,11 @@ Try at [Demo page](http://smiled0g.github.io/medium-editor-multi-placeholders-pl
 ### Installation
 **Via npm:**
 
-Run in your console: 
+Run in your console:
 ```bash
 npm install medium-editor-multi-placeholders-plugin
 ```
-Then build the project by running 
+Then build the project by running
 ```bash
 grunt
 ```
@@ -68,14 +68,17 @@ The plugin itself only takes one option: ```placeholders``` which is an array of
 ```js
 var multiPlaceholders = new MediumEditorMultiPlaceholders({
     placeholders: [
-	    /* Your place holders goes here 
+	    /* Your place holders goes here
 	       You can have as many placeholders as you want!
 	       Example: { tag: 'h1', text: 'Title' } */
     ]
 });
 ```
 
+## Known Issues
+
+Conflicts with [MediumEditor Insert Plugin](https://github.com/orthes/medium-editor-insert-plugin), because `placeholder: false` doesn't work with the some version of the it.
+
 ## License
 
 MIT: https://github.com/smiled0g/medium-editor-multi-placeholders-plugin/blob/master/LICENSE
- 
